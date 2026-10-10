@@ -50,9 +50,9 @@ MizukiはAstroをベースに開発されたブログフレームワークだ。
 
 ただし、小さな落とし穴もある。一部のimgでは、Notionのカバー画像リンクをそのまま取得すると、1時間で期限切れになるURLが返される（そういえば、Notionの画像ストレージが実はAWS S3だったのは意外だった。R2のほうが容量に余裕がある気がする）。そのため、外部ストレージに保存して永続化する必要がある（実際にはR2で十分）。ただし、Notionへ画像を追加するときにURLを直接指定していれば、取得されるのは入力した画像リンクのままとなる。つまり、あらかじめ画像をupdateしておけば、それほど大きな問題ではない。
 
-具体的な実装については、こちらを参照：<br>[NotionSyncAction](https://github.com/dreaite/Mizuki-Content/blob/notionUpdateSync/.github/notion-sync/README.md)（ちょうどmizukiのGitHub repo機能がどう使えるか試してみる（
+具体的な実装については、こちらを参照：<br>[NotionSyncAction](https://github.com/Hebi8/Mizuki-Content/blob/notionUpdateSync/.github/notion-sync/README.md)（ちょうどmizukiのGitHub repo機能がどう使えるか試してみる（
 
-::github{repo="dreaite/Mizuki-Content/blob/notionUpdateSync/.github/notion-sync/README.md"}
+::github{repo="Hebi8/Mizuki-Content/blob/notionUpdateSync/.github/notion-sync/README.md"}
 
 ### LLMによる多言語対応
 
@@ -64,9 +64,9 @@ Notion同期用CIを作る前に、mizukiのフレームワーク部分にも少
 
 こちらもほぼ同じで、汎用的な翻訳promptとシンプルなAPI呼び出しを用意し、少しvibeすれば完成する。ただし、長い記事ではLLMの応答にかなり時間がかかる可能性があるため、実際のリクエストのタイムアウト時間を少し調整する必要がある。
 
-[LLM部分の実装](https://github.com/dreaite/Mizuki-Content/blob/feat(i18n)/llm-translate/.github/notion-sync/README.md)
+[LLM部分の実装](https://github.com/Hebi8/Mizuki-Content/blob/feat(i18n)/llm-translate/.github/notion-sync/README.md)
 
-::github{repo="dreaite/Mizuki-Content"}
+::github{repo="Hebi8/Mizuki-Content"}
 
 # おわりに
 

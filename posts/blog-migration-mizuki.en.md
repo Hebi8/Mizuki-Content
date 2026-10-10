@@ -50,9 +50,9 @@ The implementation itself is nothing special. The idea is to retrieve the conten
 
 One small pitfall is that some images use Notion cover-image links directly, and those URLs expire after just one hour (I did not expect Notion's image storage to use AWS S3, by the way; wouldn't R2 be more generous?). So the images still need to be persisted in external storage somewhere (R2 will do). However, if you add an image to Notion using a URL directly, the URL you originally entered is still returned when retrieving it. As long as you update the images in advance, this is not really a major issue.
 
-For a rough reference implementation, see here:<br>[NotionSyncAction](https://github.com/dreaite/Mizuki-Content/blob/notionUpdateSync/.github/notion-sync/README.md) (also a good opportunity to try out how Mizuki's GitHub repo feature works (
+For a rough reference implementation, see here:<br>[NotionSyncAction](https://github.com/Hebi8/Mizuki-Content/blob/notionUpdateSync/.github/notion-sync/README.md) (also a good opportunity to try out how Mizuki's GitHub repo feature works (
 
-::github{repo="dreaite/Mizuki-Content/blob/notionUpdateSync/.github/notion-sync/README.md"}
+::github{repo="Hebi8/Mizuki-Content/blob/notionUpdateSync/.github/notion-sync/README.md"}
 
 ### Adding multilingual support with an LLM
 
@@ -64,9 +64,9 @@ The next step was to add an LLM translation module to the CI workflow.
 
 This was also fairly straightforward: use a generic translation prompt, add a simple API call, and vibe-code the rest. The main thing to watch out for is that LLM responses for long articles can take a long time, so the request timeout needs to be adjusted accordingly.
 
-[LLM implementation](https://github.com/dreaite/Mizuki-Content/blob/feat(i18n)/llm-translate/.github/notion-sync/README.md)
+[LLM implementation](https://github.com/Hebi8/Mizuki-Content/blob/feat(i18n)/llm-translate/.github/notion-sync/README.md)
 
-::github{repo="dreaite/Mizuki-Content"}
+::github{repo="Hebi8/Mizuki-Content"}
 
 # Conclusion
 

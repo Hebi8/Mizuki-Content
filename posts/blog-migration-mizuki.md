@@ -50,9 +50,9 @@ Mizuki是一个基于Astro开发的博客框架。有一说一，虽然之前搞
 
 不过有个小坑是，有些img直接取的notion头图链接其实是一个1h就会过期的url（话说没想到notion用的图片存储其实是aws s3，感觉r2不是更量大吗），所以还是得找个外部存储持久化一下（其实r2就行）。不过如果在添加notion图片的时候，直接用的url，那么其实取出来的还是上面填写的图片链接。所以其实只要提前把图片update好，这个倒也不是什么大问题。
 
-具体实现大概可以参考这里：<br>[NotionSyncAction](https://github.com/dreaite/Mizuki-Content/blob/notionUpdateSync/.github/notion-sync/README.md)(正好试一下mizuki-GitHub的repo可以怎么用（
+具体实现大概可以参考这里：<br>[NotionSyncAction](https://github.com/Hebi8/Mizuki-Content/blob/notionUpdateSync/.github/notion-sync/README.md)(正好试一下mizuki-GitHub的repo可以怎么用（
 
-::github{repo="dreaite/Mizuki-Content/blob/notionUpdateSync/.github/notion-sync/README.md"}
+::github{repo="Hebi8/Mizuki-Content/blob/notionUpdateSync/.github/notion-sync/README.md"}
 
 ### 通过llm来进行多语言适配
 
@@ -64,9 +64,9 @@ Mizuki是一个基于Astro开发的博客框架。有一说一，虽然之前搞
 
 其实也差不多，通用的翻译prompt，加上简单的api调用，稍微vibe一下就可以了。就是得小心一下大文章的llm回复时间可能很长，得稍微调整一下实际请求的超时时间。
 
-[llm部分实现](https://github.com/dreaite/Mizuki-Content/blob/feat(i18n)/llm-translate/.github/notion-sync/README.md)
+[llm部分实现](https://github.com/Hebi8/Mizuki-Content/blob/feat(i18n)/llm-translate/.github/notion-sync/README.md)
 
-::github{repo="dreaite/Mizuki-Content"}
+::github{repo="Hebi8/Mizuki-Content"}
 
 # 结语
 
