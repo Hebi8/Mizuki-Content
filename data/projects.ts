@@ -29,6 +29,35 @@ export interface Project {
 
 export const projectsData: Project[] = [
 	{
+		id: "hebi8-market",
+		title: "hebi8-market",
+		description: "基于 Next.js、KLineChart 与 SQLite 构建的长线看盘面板，聚合自选标的的总览、周线/月线走势与自定义技术指标，行情数据本地存储，为长期投资者提供集中跟踪与个性化看盘体验。",
+		lang: "zh_CN",
+		translations: {
+			"en": {
+				title: "hebi8-market",
+				description: "A market dashboard for long-term investors built with Next.js, KLineChart, and SQLite. It brings together watchlist overviews, weekly and monthly price trends, and custom technical indicators, with locally stored market data for centralized tracking and a personalized market monitoring experience.",
+			},
+			"ja": {
+				title: "hebi8-market",
+				description: "Next.js、KLineChart、SQLiteで構築した長期投資向けの相場分析ダッシュボード。ウォッチリスト銘柄の概要、週足・月足の値動き、カスタムテクニカル指標を集約し、相場データをローカルに保存。長期投資家が銘柄をまとめて追跡し、自分好みに相場を分析できる環境を提供します。",
+			},
+		},
+		image: "https://r2.dreaife.tokyo/notion/covers/3f65465cca1780d79557f5caa3340361/%E6%88%AA%E5%B1%8F2026-10-11_21.13.45.png",
+		category: "web",
+		techStack: [
+			"trade-panel",
+			"local-first",
+			"claude",
+			"TypeScript",
+		],
+		status: "in-progress",
+		liveDemo: "https://market-hebi8.dreaife.tokyo",
+		sourceCode: "https://github.com/Hebi8/hebi8-market",
+		startDate: "2026-10-09",
+		featured: false,
+	},
+	{
 		id: "codex-reset-forecaster",
 		title: "codex-reset-forecaster",
 		description: "一款独立于供应商的每小时Codex重置预测工具。该工具支持证据谱系溯源、截止安全建模及偏差校准，并配备直观的7天Web用户界面。帮助您获取精确可靠的重置预测数据，优化决策流程。",
@@ -52,6 +81,7 @@ export const projectsData: Project[] = [
 		],
 		status: "in-progress",
 		liveDemo: "https://codexreset.dreaife.tokyo/",
+		sourceCode: "https://github.com/dreaifekks/codex-reset-forecaster",
 		startDate: "2026-07-28",
 		featured: false,
 	},
@@ -77,7 +107,7 @@ export const projectsData: Project[] = [
 			"rss",
 			"Python",
 		],
-		status: "in-progress",
+		status: "completed",
 		liveDemo: "https://t.me/+9-Cy-yue1PJiMWY9",
 		sourceCode: "https://github.com/dreaifekks/asmr-tg-backup",
 		startDate: "2026-07-28",

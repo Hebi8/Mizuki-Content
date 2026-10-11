@@ -7,6 +7,20 @@
     "ja"
   ],
   "entries": {
+    "project:3f65465c-ca17-80d7-9557-f5caa3340361": {
+      "kind": "project",
+      "sourceHash": "e136f593ddf894ebef717a42d1b82cab46dfbe01f1b05940d788246a609dff72",
+      "translations": {
+        "en": {
+          "title": "hebi8-market",
+          "description": "A market dashboard for long-term investors built with Next.js, KLineChart, and SQLite. It brings together watchlist overviews, weekly and monthly price trends, and custom technical indicators, with locally stored market data for centralized tracking and a personalized market monitoring experience."
+        },
+        "ja": {
+          "title": "hebi8-market",
+          "description": "Next.js、KLineChart、SQLiteで構築した長期投資向けの相場分析ダッシュボード。ウォッチリスト銘柄の概要、週足・月足の値動き、カスタムテクニカル指標を集約し、相場データをローカルに保存。長期投資家が銘柄をまとめて追跡し、自分好みに相場を分析できる環境を提供します。"
+        }
+      }
+    },
     "project:3aa5465c-ca17-8071-b4f6-e916cdcf4f4d": {
       "kind": "project",
       "sourceHash": "2602a6c14ac2b62aec755a657fc1607919dfdfef06cbdf304408ce259e832bc6",
